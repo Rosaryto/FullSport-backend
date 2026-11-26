@@ -1,0 +1,19 @@
+{
+  "name": "fullsport-backend",
+  "version": "1.0.0",
+  "description": "Backend del e-commerce FullSport",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file .env index.js",
+    "dev": "node --watch --env-file .env index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mongoose": "^9.13.1",
+    "morgan": "^1.12.1"
+  }
+}
