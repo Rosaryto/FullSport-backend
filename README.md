@@ -20,4 +20,9 @@ Backend del e-commerce FullSport (proyecto final de RollingCode).
 | GET | /api/prueba | Comprueba que el backend funciona |
 
 ## Integrantes
-- 
+- Rosario Pierrestegui (Scrum Master)
+- Nora Andrea Reyes
+- José Taboada
+- Ricardo Vosahlo
+- Victoria Micaela Ponce
+- Eliana Gatti
