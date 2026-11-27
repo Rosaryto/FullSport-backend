@@ -26,7 +26,14 @@ export default class Server {
     this.app.use(express.json());
     this.app.use(cookieParser());
 
-    this.app.use("/api", csrfProtection);
+ const origenesPermitidos = [
+  process.env.FRONTEND_URL || "http://localhost:5173",
+  ...(process.env.CSRF_ALLOWED_ORIGINS
+    ? process.env.CSRF_ALLOWED_ORIGINS.split(",")
+    : []),
+];
+
+this.app.use("/api", csrfProtection(origenesPermitidos));
 
     const __dirname = dirname(fileURLToPath(import.meta.url));
     this.app.use(express.static(__dirname + "/../../public"));
